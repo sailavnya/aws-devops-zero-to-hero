@@ -11,7 +11,9 @@ Elastic Beanstalk supports multiple programming languages and platforms, includi
 An Elastic Beanstalk environment is a specific instance of your application that includes the runtime, resources, and configuration settings. You can have multiple environments (e.g., development, testing, production) for the same application.
 
 ### 5. How does Elastic Beanstalk handle updates and deployments?
-Elastic Beanstalk supports both All at Once and Rolling deployments. All at Once deploys updates to all instances simultaneously, while Rolling deploys updates in batches to reduce downtime.
+Elastic Beanstalk supports both All at Once and Rolling deployments. All at Once deploys updates to all instances simultaneously, while Rolling deploys updates in batches to reduce downtime. rolling will deploy the 2 instances and stop and Rolling with additional batch will deploy 2 instances and again 2 instances.
+
+we have All at once, Rolling , Rolling with additional batch , Immutable (deploy few and then stop), Traffic splitting (spilts the traffic)
 
 ### 6. Can you customize the infrastructure in Elastic Beanstalk?
 Yes, Elastic Beanstalk allows you to customize the environment's resources, configuration, and scaling settings through environment configuration files or the AWS Management Console.
